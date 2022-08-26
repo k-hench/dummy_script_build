@@ -14,7 +14,7 @@ To make the container publicly available, it is pushed to [dockerhub](https://hu
 
 ```sh
 skopeo login -u khench docker.io
-podman push localhost/dummy_script docker.io/khench/dummy_script:v0.1
+podman push localhost/dummy_script docker.io/khench/dummy_script:v0.2
 ```
 
 ## Accessing the container
@@ -22,7 +22,7 @@ podman push localhost/dummy_script docker.io/khench/dummy_script:v0.1
 The bundled software can be accessed directly from [dockerhub](https://hub.docker.com/r/khench/qc_suite) with `podman` (or `docker`, or `singularity`):
 
 ```sh
-podman run docker.io/khench/dummy_script:v0.1 dummy_script /usr/local/bin/dummy_script
+podman run docker.io/khench/dummy_script:v0.2 dummy_script /usr/local/bin/dummy_script
 ```
 
 This should return:
